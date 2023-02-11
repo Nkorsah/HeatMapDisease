@@ -5,8 +5,9 @@ import covidactnow
 
 api = covidactnow.User(api_key = '52946c7f007449fdb3f2f6d27620027e')
 
-washingtonInfectionRate = api.infRate('WA')
+PAInfectionRate = api.infRate('PA')
 massachussettsVaxRate = api.vaxRate('MA')
 
-print(f"{washingtonInfectionRate = }")
+print(f"{PAInfectionRate = }")
 print(f"{massachussettsVaxRate = }")
+print(api.actuals.cases)
