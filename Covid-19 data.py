@@ -14,5 +14,9 @@ print(f"{PAInfectionRate = }")
 # print(f"{massachussettRiskLevelsOverall = }")
 file = open('counties.csv', 'r')
 data = file.readlines()
-print(data[19])
-
+#print(data)
+counties = []
+for line in data:
+    stuff = line.split(",")
+    states = stuff[2]
+    print(states)
