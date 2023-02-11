@@ -11,7 +11,8 @@ PAInfectionRate = api.infRate('PA')
 massachussettsVaxRate = api.vaxRate('MA')
 
 print(f"{PAInfectionRate = }")
-print(f"{massachussettsVaxRate = }")
-#print(actuals.cases)
-data = open('counties.csv', 'r')
+# print(f"{massachussettRiskLevelsOverall = }")
+file = open('counties.csv', 'r')
+data = file.readlines()
+print(data[19])
 
