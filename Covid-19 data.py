@@ -19,4 +19,7 @@ counties = []
 for line in data:
     stuff = line.split(",")
     states = stuff[2]
-    print(states)
+    if states == "PA":
+        counties.append(stuff[3])
+
+print(counties)
