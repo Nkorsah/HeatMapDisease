@@ -11,7 +11,7 @@ from folium.features import GeoJsonTooltip
 import geopandas as gpd
 import pandas as pd
 
-map = folium.Map(location=[39.95700996945959, -75.15569443929508], zoom_start = 9.5)
+map = folium.Map(location=[ 41.203323, -77.194527], zoom_start = 7.5)
 
 complete = open('complete.csv','r')
 dadata = pd.read_csv('complete.csv')
@@ -29,14 +29,14 @@ for line in data:
 for item in cords:
     pass
 folium.Choropleth(
-    geo_data="https://raw.githubusercontent.com/python-visualization/folium/main/examples/data/us-states.json",
+    geo_data="https://gist.githubusercontent.com/wrobstory/5586482/raw/6031540596a4ff6cbfee13a5fc894588422fd3e6/us-counties.json",
     name="choropleth",
     data=dadata,
-    columns=["county", "long", "risk_level"],
+    columns=["fibs code", "risk_level"],
     key_on="feature.id",
-    fill_color="YlGn",
-    fill_opacity=0.7,
-    line_opacity=0.2,
+    fill_color="YlOrRd",
+    fill_opacity=0.35,
+    line_opacity=0.5,
     legend_name="risk_level",
 ).add_to(map)
 
