@@ -4,6 +4,10 @@
 # import seaborn
 # import numpy
 # import matplotlib.pylab
+
+
+# This is the file used to display the data on a map. Im going to run it . This displays the covid risk level in 
+#each county in PA.
 import folium
 import webbrowser
 from folium.plugins import HeatMap
