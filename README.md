@@ -1,7 +1,7 @@
 # HeatMapDisease
 Covid Risk levels covid-19 in each county
 
-In order to run this program you need to install the follwing:
+In order to run this program you need to install the following:
 
 The Folium Module
 pip install folium
